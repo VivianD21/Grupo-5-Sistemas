@@ -160,7 +160,7 @@ public class Menu extends MenuVista {
 		int opcion = Integer.parseInt(scanner.nextLine());
 		switch (opcion) {
 		case 1:
-			exportarCsv.exportar(fileName + ".cvs", listaClientes);
+			exportarCsv.exportar(fileName + ".csv", listaClientes);
 			utilidad.pausa();
 			break;
 		case 2:
