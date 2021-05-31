@@ -21,11 +21,8 @@ public class ClienteServicio {
 		// TODO Auto-generated constructor stub
 	}
 
-//	public void listarClientes() {
-//		if (listaClientes != null) {
-//		}
-//	}
 
+//Mostrar opciones
 	public void retornolistarClientes(List<Cliente> listaClientes) {
 		if (listaClientes.size() != 0) {
 
@@ -46,8 +43,6 @@ public class ClienteServicio {
 			System.out.println("Volviendo al Menu principal...");
 
 		}
-		// llamar utilidad
-		// Utilidades.utilidad();
 
 	}
 
@@ -57,7 +52,7 @@ public class ClienteServicio {
 		Utilidad.pausa();
 
 	}
-
+	//Mostrar opciones para editar cliente
 	public void editarCliente(Cliente cliente) {
 		int opcion = 0;
 		Scanner recibe = new Scanner(System.in);
@@ -108,7 +103,7 @@ public class ClienteServicio {
 			editarCliente(cliente);
 		}
 	}
-
+	//Cambia estado cliente
 	public void editarEstadoCliente(Cliente cliente) {
 		int opcion = 0;
 		Scanner recibe = new Scanner(System.in);
